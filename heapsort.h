@@ -1,7 +1,10 @@
 #ifndef HEAPSORT_H
 #define HEAPSORT_H
 
-typedef char bin160_t[20];
+typedef struct bin160_t bin160_t;
+struct bin160_t {
+    char buf[20];
+};
 
 int bsearch_int32(int32_t arr[], int n, int32_t val);
 int bsearch_int64(int64_t arr[], int n, int64_t val);
